@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/color/256/x-coordinate.png">
+
+    <title>智能干手器</title>
+
+</head>
+
+<body class="da">
+    <div
+        style="height:100vh;background-color: aquamarine;display: flex;justify-content: center;align-items: center;flex-direction: column;">
+        <p class="welcome">欢迎</p>
+        <p class="welcome1">单片机干手器使用留言</p>
+    </div>
+    <div
+        style="height:100vh;background-color: rgb(255, 187, 127);display: flex;justify-content: center;align-items: center;flex-direction: column;">
+
+        <div class="contact-form form container">
+            <form action="#" autocomplete="off">
+                <h3 class="title">和大家说说吧！</h3>
+                <div class="input-container">
+                    <input type="text" name="name" class="input" id="name" />
+                    <label for="">昵称</label>
+                    <span>昵称</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="phone" class="input" id="phone" />
+                    <label for="">联系方式</label>
+                    <span>联系方式</span>
+                </div>
+                <div class="input-container">
+              
+                    <div>
+                        <input type="checkbox" name="ss" onclick="choose(this)" value="好评"><a class="good">好评</a>
+                        <input type="checkbox" name="ss" onclick="choose(this)" value="一般般"><a class="good">一般般</a>
+                        <input type="checkbox" name="ss" onclick="choose(this)" value="太差了"><a class="good">太差了</a>
+
+                    </div>
+
+                </div>
+
+                <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">说说什么吧···</label>
+                    <span>说说什么吧···</span>
+                </div>
+                <button type="button" class="btn" id="btn">评论！</button>
+            </form>
+
+
+        </div>
+    </div>
+    <div
+        style="height:100vh;background-color: rgb(127, 161, 255);display: flex;align-items: center;flex-direction: column;">
+        <p style="font-size :70px ;">评论区</p>
+        <ul></ul>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
